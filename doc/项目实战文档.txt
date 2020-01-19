@@ -1,0 +1,40 @@
+﻿项目演示
+
+手机端的公众号app  和pc端的卖家后台管理系统
+
+手机端使用vue构建的app ，
+
+pc 端使用 springboot + bootstrap + freemarker +jquery
+
+前端和后端两者通过restful风格的接口相连
+
+数据库方面使用springboot+jpa 
+缓存方面使用springboot+redis    分布式session  和分布式锁
+消息推送方面使用websocket
+
+由于此项目是基于微信的外卖点餐系统，所以涉及到了微信相关的知识
+	1、模板消息推送   2、扫码登录 	3、微信支付和退款
+
+为了使大家能够快速进入开发状态，提供了一个配置好的虚拟机，手机端就一个
+vue页面已经在虚拟机里有了，有兴趣的可以下面自己实现下那个页面的布局。
+这个项目主要关注后端的代码开发。
+
+做完此项目的收获
+	了解springboot 开发的相关特性
+	了解微信开发的相关特性
+	利用redis 应用分布式session和锁
+	从0到1 开发一个中小型的企业级应用
+
+
+
+ 项目中使用的工具
+ 	虚拟机  上面安装了mysql  tomcat  jdk  redis nginx 	
+
+1、数据库设计
+2、开发环境的搭建
+	spring boot 使用的版本是1.5.3 
+	引用相关依赖 web  mysql   jpa   test lombok   devtools
+	配置application.properties
+	hello world 测试下这个环境有没有问题 
+3、dao层的开发
+	product_category dao的开发
